@@ -3,16 +3,16 @@
 ### Single Line Comments
 As usual.
 ```
-// Hello world
+// Hello world.
 ```
 
 ### Multi-Line Comments
-Text should start without spaces.
-The closing comment syntax should end on same final line of the text.
+The text should start without spaces.
+The closing comment syntax should end on the same final line of the text.
 ```
 /* 
-Text should start without spaces.
-The closing comment syntax should end on same final line of the text. */
+The text should start without spaces.
+The closing comment syntax should end on the same final line of the text. */
 ```
 
 
@@ -42,7 +42,7 @@ Functions comments should be structured.
 | nN       | NaN |
 
 ### Object Types 
-For additional types of objects, the object should be defined in the parameter-description.
+To include more types of objects, specify their definitions in the parameter description.
 
 ```
 - pattern - o - RegExp: <Pattern description>
@@ -53,7 +53,7 @@ Use the `|` to imply multiple types
 ```
 - value - A|n|s - <Value description> 
 ```
-Union Types with object types can be defined similarly
+Union-types containing object types can be defined in the parameter description relatively.
 ```
 - value - o|o|o|s - WeakMap, o, RegExp, s: <Value description>
 ```
