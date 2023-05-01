@@ -17,7 +17,7 @@ The closing comment syntax should end on the same final line of the text. */
 
 
 ### Functions Comments
-Functions comments should be structured.
+Functions comments should be structured:
 ```
 /*
 <Description>
@@ -25,6 +25,7 @@ Functions comments should be structured.
 - ""  - ""  - ""
 - Return - <Shorthand-type> - <Return-description> */
 ```
+Parameter and return descriptons are optional.
 
 ### Common Types 
 | Shorthand| Type    |
