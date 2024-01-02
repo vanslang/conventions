@@ -1,9 +1,38 @@
 # Comments
 
 ### Single Line Comments
-As usual.
-```
+A single line comment can be eith
+```javascript
 // Hello world.
+```
+or 
+```javascript
+/*
+Hello world */
+```
+With **no space between the comment and the syntax below**.
+But they cannot head a function. All functions must be headed by a multi-line comment that ends on a new line. 
+```javascript
+/*
+Hello world 
+*/
+cosnt someFunction = () => {}
+```
+**All comments in the module scope must be separated by two spaces above.**
+
+```javascript
+...}
+
+
+/*
+This is a comment */
+someSyntax()
+
+
+/*
+This is another comment
+*/
+someSyntax()
 ```
 
 ### Multi-Line Comments
