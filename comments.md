@@ -29,32 +29,33 @@ Parameter and return descriptons are optional.
 
 ### Common Types 
 | Shorthand| Type    |
-| :---     | :----:  |
-| u        | Undefined|      
-| b        | Boolean |
-| n        | Number  |
-| B        | BigInt  | 
-| s        | String  |
-| $        | Symbol  |
-| f        | Function|
-| o        | object  |
-| A        | Array   |
-| N        | Null  |
-| nN       | NaN |
+| :---         | :----:  |
+| undefined    | Undefined|      
+| boolean      | Boolean |
+| number        | Number  |
+| Bigint        | BigInt  | 
+| string        | String  |
+| symbol        | Symbol  |
+| function        | Function|
+| object        | object  |
+| array        | Array   |
+| null         | Null  |
+| nan          | NaN |
+| regexp       | RegExp 
 
 ### Object Types 
 To include more types of objects, specify their definitions in the parameter description.
 
 ```
-- pattern - o - RegExp: <Pattern description>
+- pattern - object - RegExp: <Pattern description>
 ```
 
 ### Union Types
 Use the `|` to imply multiple types
 ```
-- value - A|n|s - <Value description> 
+- value - array|number|string - <Value description> 
 ```
 Union-types containing object types can be defined in the parameter description relatively.
 ```
-- value - o|o|o|s - WeakMap, o, RegExp, s: <Value description>
+- value - object|object|string - weakmap, object, regexp, string: <Value description>
 ```
